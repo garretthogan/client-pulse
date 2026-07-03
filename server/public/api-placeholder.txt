@@ -1,0 +1,2 @@
+ClientPulse API deployment placeholder.
+Requests are handled by the Vercel Node.js function in api/index.ts.

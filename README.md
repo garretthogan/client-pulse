@@ -234,6 +234,8 @@ Create two Vercel projects from the same GitHub repo:
 | `clientpulse-api` | `server` | NestJS API as Vercel Node.js Functions |
 | `clientpulse-web` | `client` | Next.js frontend |
 
+For `clientpulse-api`, leave Framework Preset as `Other`, set Build Command to `npm run vercel-build`, and set Output Directory to `public`. The committed `server/public/api-placeholder.txt` file is intentional: it satisfies Vercel's static output directory check for this API-only project while all real API traffic is routed through `server/api/index.ts`.
+
 Set API project environment variables:
 
 ```text
